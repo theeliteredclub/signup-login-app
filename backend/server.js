@@ -7,6 +7,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// 🔹 ADD THIS route for GET /
+app.get("/", (req, res) => {
+  res.send("✅ Backend is live! Welcome to the Signup/Login API.");
+});
+
 // Signup
 app.post('/signup', async (req, res) => {
   const { username, email, password } = req.body;
