@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:5000";
+const baseUrl = "https://signup-login-app-2.onrender.com";
 
 document.getElementById("signupForm").addEventListener("submit", async (e) => {
   e.preventDefault();
